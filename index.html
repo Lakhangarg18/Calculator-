@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="text"readonly>
+        <div class="button">
+            <button class="but" onclick="result='';document.querySelector('.text').value=result;">C</button>
+            <button class="but" onclick="result=result + '1';document.querySelector('.text').value=result;">1</button>
+            <button class="but" onclick="result=result + '2';document.querySelector('.text').value=result;
+            ">2</button>
+            <button class="but" onclick="result=result + '+';document.querySelector('.text').value=result;">+</button>
+            <button class="but" onclick="result=result + '3';document.querySelector('.text').value=result;">3</button>
+            <button class="but" onclick="result=result + '4';document.querySelector('.text').value=result;">4</button>
+            <button class="but" onclick="result=result + '-';document.querySelector('.text').value=result;">-</button>
+            <button class="but" onclick="result=result + '5';document.querySelector('.text').value=result;">5</button>
+            <button class="but" onclick="result=result + '6';document.querySelector('.text').value=result;">6</button>
+            <button class="but" onclick="result=result + '*';document.querySelector('.text').value=result;">*</button>
+            <button class="but" onclick="result=result + '7';document.querySelector('.text').value=result;">7</button>
+            <button class="but" onclick="result=result + '8';document.querySelector('.text').value=result;">8</button>
+            <button class="but" onclick="result=result + '/';document.querySelector('.text').value=result;">/</button>
+            <button class="but" onclick="let res=eval(result); result=res;document.querySelector('.text').value=result;">=</button>
+            <button class="but" onclick="result=result + '9';document.querySelector('.text').value=result;">9</button>
+            <button class="but" onclick="result=result + '0';document.querySelector('.text').value=result;">0</button>
+            <button class="but" onclick="result=result + '.';document.querySelector('.text').value=result;">.</button>
+        </div>
+       
+    </div>
+    <script>
+        let result='';
+        // document.querySelector('.text').value=result;
+    </script>
+</body>
+</html>
